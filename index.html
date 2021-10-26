@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Analysis Visualizations</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-xlg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Latitude</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="True" aria-expanded="false">
+              Plots
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="Resources/temp.html">Temperature</a></li>
+              <li><a class="dropdown-item" href="Resources/humidity.html">Humidity</a></li>
+              <li><a class="dropdown-item" href="Resources/cloudiness.html">Cloudiness</a></li>
+              <li><a class="dropdown-item" href="Resources/wind.html">Wind Speed</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Resources/comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Resources/data.html">Data</a>
+          </li>
+        </ul>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="bg-info col-md-4">
+            <h1>Summary: Latitude vs. X</h1>
+            <hr>
+            <img src="Resources/assets/images/Fig1.png" alt="Latitude vs. Max Temperature" class="float-left" id="main_img" width="500">
+            <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish
+              this analysis, we first pulled data from the OpenWeatherMapAPI to assemble a dataset on over 500 cities.
+            </p>
+            <p>After assembling the dataset, we used MatPlotLib to plow various aspects of the weatgher vs. latitude.
+              Factors included: temperature, wind speed, cloudiness, and humidity. This site provides the source data and 
+              visualizations created as paret of the analysis, as well as explanations of any trends and correlations witnessed.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+            <div class="box">
+              <h2>Visualizations</h2>
+              <hr>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-4 col-lg-2">
+                    <a href="Resources/temp.html"><img src="Resources/assets/images/Fig1.png" alt="Latitude vs. Max Temperature" width="250" id="visualization_temp"></a>
+                  </div>
+                  <div class="col-md-4 col-lg-2">
+                    <a href="Resources/humidity.html"><img src="Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" width="250" id="visualization_humidity"></a>
+                  </div>
+                  <div class="col-md-4 col-lg-2">
+                    <a href="Resources/cloudiness.html"><img src="Resources/assets/images/Fig3.png" alt="Latitude vs. Cloudiness" width="250" id="visualization_cloud"></a>
+                  </div>
+                  <div class="col-md-4 col-lg-2">
+                    <a href="Resources/wind.html"><img src="Resources/assets/images/Fig4.png" alt="Latitude vs. Wind speed" width="250" id="visualization_wind"></a>
+                  </div>
+                </div>
+    </div>
+  </nav>  
+
+</body>
+
+</html>
+
